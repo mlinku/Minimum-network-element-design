@@ -1,0 +1,2 @@
+SWITCH = 3
+ROUTER = 4,5,6

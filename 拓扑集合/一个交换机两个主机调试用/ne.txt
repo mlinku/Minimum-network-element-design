@@ -1,0 +1,74 @@
+---------------------------------------------------------
+1 PHY0  LNK0 NET0 APP0
+2 PHY0  LNK0 NET0 APP0
+3 PHY0  LNK0
+   PHY1
+---------------------------------------------------------
+1,0--3,0
+2,0--3,1
+---------------------------------------------------------
+cmdIpAddr= 1
+cmdPort=20000
+phySlotTime = 15
+trafficPlotRate = 100
+errorProb = 20
+bufferSize = 80000
+heartBeatingTime = 40
+autoSendTime = 6
+autoSendSize = 10000
+---------------------------------------------------------
+deviceID = 1
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 1.2
+		------------------------------
+	layer = APP
+		entityID = 0
+			# 主机接收能力的设定 
+			recvSensitivity = 50 
+			IP = 1.2
+			heartBeatingTime = 80
+----------------------------------------------------------
+deviceID = 2
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			myAddr = 20
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			myAddr = 2
+			IP = 1.3
+		------------------------------
+	layer = APP
+		entityID = 0
+			myAddr = 2
+			recvSensitivity = 40
+			IP = 1.3
+			heartBeatingTime = 80
+----------------------------------------------------------
+deviceID = 3
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+		entityID = 1
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			myAddr = 30
+			lowerMode0 = 0
+			lowerMode1 = 0

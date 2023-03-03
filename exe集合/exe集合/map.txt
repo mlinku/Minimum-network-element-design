@@ -1,0 +1,7 @@
+PHY = 物理层模拟软件.exe
+APP = apptester.exe
+LNK_PC = LnkTester-p.exe
+LNK_SWITCH = LnkTester-s.exe
+LNK_ROUTER = LnkTester-p.exe
+NET_PC = NetTester-p.exe
+NET_ROUTER = NetTester-r.exe

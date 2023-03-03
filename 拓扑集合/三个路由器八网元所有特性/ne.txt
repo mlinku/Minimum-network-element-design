@@ -1,0 +1,232 @@
+---------------------------------------------------------
+1 PHY0  LNK0 NET0 APP0
+2 PHY0  LNK0 NET0 APP0
+3 PHY0  LNK0
+   PHY1
+   PHY2
+4 PHY0  LNK0  NET0
+   PHY1  LNK1
+   PHY2  LNK2
+5 PHY0  LNK0  NET0
+   PHY1  LNK1
+   PHY2  LNK2
+   PHY3  LNK3
+6 PHY0  LNK0  NET0
+   PHY1  LNK1
+   PHY2  LNK2
+7 PHY0  LNK0 NET0 APP0
+8 PHY0  LNK0 NET0 APP0
+---------------------------------------------------------
+1,0--3,1
+2,0--3,2
+3,0--4,0
+4,1--6,0
+4,2--5,3
+5,0--7,0
+5,1--8,0
+5,2--6,1
+---------------------------------------------------------
+cmdIpAddr= 0
+cmdPort=0
+phySlotTime = 30
+trafficPlotRate = 100
+errorProb = 20
+bufferSize = 650000
+heartBeatingTime = 65
+autoSendTime = 10
+autoSendSize = 10000
+---------------------------------------------------------
+deviceID = 1
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 1.2
+		------------------------------
+	layer = APP
+		entityID = 0
+			recvSensitivity = 10 
+			IP = 1.2
+			heartBeatingTime = 150
+----------------------------------------------------------
+deviceID = 2
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 1.3
+		------------------------------
+	layer = APP
+		entityID = 0
+			recvSensitivity = 20
+			IP = 1.3
+			heartBeatingTime = 150
+----------------------------------------------------------
+deviceID = 3
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+		entityID = 1
+			upperMode = 0
+		-----------------------------
+		entityID = 2
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			myAddr = 30
+			lowerMode0 = 0
+			lowerMode1 = 0
+			lowerMode2 = 0
+----------------------------------------------------------
+deviceID = 4
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+		entityID = 1
+			upperMode = 0
+		-----------------------------
+		entityID = 2
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+		entityID = 1
+			lowerMode0 = 0
+		------------------------------
+		entityID = 2
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 1.1,5.1,6.1
+			rPort = 1-5.2,2-6.2
+			mode = 0
+----------------------------------------------------------
+deviceID = 5
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+		entityID = 1
+			upperMode = 0
+		-----------------------------
+		entityID = 2
+			upperMode = 0
+		-----------------------------
+		entityID = 3
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+		entityID = 1
+			lowerMode0 = 0
+		------------------------------
+		entityID = 2
+			lowerMode0 = 0
+		------------------------------
+		entityID = 3
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 2.1,3.1,7.1,6.2
+			rPort = 2-7.2,3-6.1
+			mode = 0
+----------------------------------------------------------
+deviceID = 6
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+		entityID = 1
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+		entityID = 1
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 5.2,7.2
+			rPort = 0-5.1,1-7.1
+			mode = 0
+----------------------------------------------------------
+deviceID = 7
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 2.2
+		------------------------------
+	layer = APP
+		entityID = 0
+			recvSensitivity = 100
+			IP = 2.2
+			heartBeatingTime = 150
+----------------------------------------------------------
+deviceID = 8
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 3.2
+		------------------------------
+	layer = APP
+		entityID = 0
+			recvSensitivity = 100
+			IP = 3.2
+			heartBeatingTime = 150
+----------------------------------------------------------
+deviceID = 9
+	layer = PHY
+		entityID = 0
+			upperMode = 0
+		-----------------------------
+	layer = LNK
+		entityID = 0
+			lowerMode0 = 0
+		------------------------------
+	layer = NET
+		entityID = 0
+			IP = 4.2
+		------------------------------
+	layer = APP
+		entityID = 0
+			recvSensitivity = 100
+			IP = 4.2
+			heartBeatingTime = 150
+----------------------------------------------------------
